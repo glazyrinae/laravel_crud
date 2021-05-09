@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('/pages/home');
-});
+Route::get('/', 'PagesController@home')->name('home');
+Route::get('/view', 'PagesController@viewtasks')->name('view');
+Route::match(['get', 'post'], '/addtask', 'PagesController@addtask')->name('addtask');
+#Route::get('/edit/{id}', 'PagesController@edittask');
+Route::get('/login', 'PagesController@login');

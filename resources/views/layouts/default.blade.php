@@ -2,6 +2,8 @@
 <html>
     <head>
         @include('includes.head')
+        @stack('styles')
+        @stack('scripts')
     </head>
     <body>
         <div class="">

@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-addtask {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-addtask .checkbox {
+  font-weight: 400;
+}

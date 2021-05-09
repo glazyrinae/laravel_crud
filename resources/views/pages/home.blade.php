@@ -1,4 +1,7 @@
 @extends('layouts.default')
+@section('title')
+home
+@stop
 @section('content')
     <div class="container">
         <h1 class="mt-5">Sticky footer with fixed navbar</h1>
